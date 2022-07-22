@@ -2,7 +2,7 @@
 
 Follow these step to successfully run this program:
 
-1) Download node js from https://nodejs.org/
+1) Download node js from https://nodejs.org/ and install node.
 2) Download "Student_Management_System" and unzip it.
 3) Open the folder with VS Code editor.
 4) Go to Terminal> New terminal in VS Code.
