@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+/*Add padding to containers*/
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 241, 248);
+    position: relative;
+}
+.container{
+    background-color: rgb(62, 159, 197);
+    width: 500px;
+    position: absolute;
+    left: 35%;
+    padding: 10px;
+    top: 10%;
+    border-radius: 10px;
+}
+h3{
+    color: white;
+}
+h3.center{
+    text-align: center;
+    color: white;
+}
+/*Full width input fields*/
+input[type=text],
+input[type=phone],
+input[type=email]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus,
+input[type=phone]:focus,
+input[type=email]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+/*Set a style for the submit button*/
+.registerbtn{
+    background-color: rgb(11, 72, 97);
+    color: white;
+    margin: 8px 0;
+    padding: 6px 8px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.registerbtn:hover{
+    opacity: 1;
+}
+a.home{
+    color: black;
+}
+a.home:hover{
+    opacity: 0.5;
+}
+/*Add a blue text color to link*/
+a{
+    color: dodgerblue;
+}
+
+/*Set a grey background color and center the text of the "sign in" section*/
+
+.gender_g{
+    display: flex;
+}

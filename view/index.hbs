@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Project</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 2px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(62, 159, 197);
+            padding: 4px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 1px;
+            margin: 11px;
+            color: rgb(23, 77, 99);
+            background-color: rgb(62, 159, 197);
+            color: white;
+        }
+
+        .menu a {
+            font-size: 15px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .menu a:hover {
+            opacity: 0.8;
+        }
+
+        .heading1 {
+            padding: 2px;
+            background-color: rgb(62, 159, 197);
+        }
+
+        .aside {
+            background-color: #33b5e5;
+            padding: 5px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+            box-shadow: 0 2px 5px rgb(0 0 0 / 20%), 0 2px 5px rgb(0 0 0 / 24%)
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 5px;
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading1">
+        <h1>Student Registration Database</h1>
+    </div>
+    <div class="menu">
+        <a href="/add">ADD STUDENT</a>
+        <a href="/view">VIEW STUDENT</a>
+        <a href="/search">SEARCH STUDENT</a>
+        <a href="/update">UPDATE STUDENT</a>
+        <a href="/delete">DELETE STUDENT</a>
+
+    </div>
+
+    <div class="col-6 col-s-9">
+        <h2>The Project</h2>
+        <p>Making a simple student database system using HTML, CSS, Node JS and MySQL.</p>
+    </div>
+
+    <div class="col-3 col-s-12">
+        <div class="aside">
+            <h2>ADD</h2>
+            <p>Add student details in add menu section. Email and phone number should be unique.</p>
+            <h2>VIEW</h2>
+            <p>You can view all the add student list in view section.</p>
+            <h2>SEARCH</h2>
+            <p>Search student by their phone number.</p>
+            <h2>UPDATE</h2>
+            <p>You only can change name and gender. Phone number and email can not be changed.</p>
+            <h2>DELETE</h2>
+            <p>You can also delete data from database.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <p>Author: Sumon Das</p>
+    </div>
+</body>
+
+</html>

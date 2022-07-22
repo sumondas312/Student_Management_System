@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/deletesearch">
+            <h3 class="center">DELETE STUDENT</h3>
+            <hr>
+            <label for="phn"><b>Phone Number:</b></label>
+            <input type="phone" placeholder="Type phone number to be searched" name="phone" id="phone" required>
+            <button type="submit" class="registerbtn">SEARCH STUDENT</button>
+            <a href="./" class="home">BACK TO HOME PAGE</a>
+            <br>
+            {{#if mesg2}}
+            <h3>Data in not found!</h3>
+            {{/if}}
+            {{#if mesg3}}
+            <h3>Data deleted!</h3>
+            {{/if}}
+
+        </form>
+    </div>
+    <!--Search form design end-->
+    {{#if mesg1}}
+            <div class="container">
+        <form action="/removestudent">
+            <h3 class="center">DELETE STUDENT</h3>
+            <hr>
+            {{#data}}
+            <label for="name"><b>Student name:</b></label>
+            <input type="text" placeholder="Enter name" name="name" value="{{name}}" id="name" required readonly>
+
+            <label for="phn"><b>Phone No:</b></label>
+            <input type="phone" placeholder="Enter Phone Number" name="phone" value="{{phone}}" id="phone" required readonly>
+
+            <label for="eml-id"><b>Email id:</b></label>
+            <input type="email" placeholder="Enter email id" value="{{email}}" name="email" id="email" required readonly>
+
+            <label><b>Gender: </b></label>
+            <input type="text" name="name" value="{{gender}}" required readonly>
+            
+            <button type="submit" class="registerbtn">DELETE STUDENT</button>
+            <a href="./" class="home">BACK TO HOME PAGE</a><br>
+            </div>
+            {{/data}}
+            
+        </form>
+        {{#if mesg2}}
+            <h3>Data in not found!</h3>
+            {{/if}}
+    </div>
+    {{/if}}
+</body>
+</html>

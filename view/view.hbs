@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIEW PROJECT</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 2px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      background-color: rgb(62,
+          159, 197);
+      padding: 4px;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 1px;
+      margin:
+        11px;
+      color: rgb(23, 77, 99);
+      background-color: rgb(62, 159, 197);
+      color:
+        white;
+    }
+
+    .menu a {
+      font-size: 15px;
+      font-weight: bolder;
+      color: white;
+    }
+
+    .menu a:hover {
+      opacity: 0.8;
+    }
+
+    .heading1 {
+      padding: 2px;
+      background-color:
+        rgb(62, 159, 197);
+    }
+
+    table,
+    tr,
+    td,
+    thead {
+      width: 1000px;
+      height: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(62, 159,
+          197, 0.822);
+          text-align: center;
+          border: 1px solid rgb(6, 85, 105);
+          align: center;
+    }
+    table{
+      border-collapse: collapse;
+    }
+    th{
+      color: white;
+    }
+    td{
+      color: white;
+    }
+
+  
+  </style>
+</head>
+
+<body>
+  <div class="heading1">
+    <h1>Student Registration Database</h1>
+  </div>
+  <div class="menu">
+    <a href="/add">ADD STUDENT</a>
+    <a href="/view">VIEW STUDENT</a>
+
+    <a href="/search">SEARCH STUDENT</a>
+    <a href="/update">UPDATE STUDENT</a>
+    <a href="/delete">DELETE STUDENT</a>
+
+  </div>
+  <br />
+  <table>
+    <thead><tr ><th colspan="4"><h3>DATABASE</h3></th>
+    </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th><h3>Name</h3></th>
+        <th><h3>Phone number</h3></th>
+        <th><h3>Email id</h3></th>
+        <th><h3>Gender</h3></th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#data}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{phone}}</td>
+        <td>{{email}}</td>
+        <td>{{gender}}</td>
+      </tr>
+      {{/data}}
+    </tbody>
+  </table>
+</body>
+
+</html>
